@@ -1,0 +1,19 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TestRepo
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_exported import TestRepo
+import UIKit
+import _Concurrency
+import _StringProcessing
+public protocol Test {
+  func load(from xibName: Swift.String) -> Swift.Bool
+  func add(to view: UIKit.UIView)
+}
+extension TestRepo.Test where Self : UIKit.UIView {
+  @discardableResult
+  public func load(from xibName: Swift.String) -> Swift.Bool
+  public func add(to view: UIKit.UIView)
+}

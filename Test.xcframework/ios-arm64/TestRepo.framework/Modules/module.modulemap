@@ -1,0 +1,11 @@
+framework module TestRepo {
+  umbrella header "TestRepo.h"
+
+  export *
+  module * { export * }
+}
+
+module TestRepo.Swift {
+  header "TestRepo-Swift.h"
+  requires objc
+}
