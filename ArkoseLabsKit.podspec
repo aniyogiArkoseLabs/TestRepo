@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Arkose Labs" => "a.niyogi@arkoselabs.com" }
   spec.platform     = :ios, "12.0"
-  spec.source       = { :git => "https://github.com/ArkoseLabs/ALSDK-iOS-Private.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/aniyogiArkoseLabs/TestRepo.git", :tag => "#{spec.version}" }
   spec.source_files  = "ArkoseLabsKit","ArkoseLabsKit/**/*.{swift}"
   spec.swift_version = "5.0"
 end
